@@ -6,6 +6,7 @@ namespace MyFace.Models.Request
     {
         [Required]
         [StringLength(140)]
+
         public string Message { get; set; }
         
         public string ImageUrl { get; set; }

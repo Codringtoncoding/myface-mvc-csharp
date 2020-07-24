@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Net;
+using Microsoft.AspNetCore.Mvc;
 using MyFace.Models.Request;
 using MyFace.Models.View;
 using MyFace.Repositories;
@@ -17,6 +18,7 @@ namespace MyFace.Controllers
             _interactions = interactions;
         }
         
+    
         [HttpGet("")]
         public IActionResult PostsPage(int pageNumber = 0, int pageSize = 10)
         {

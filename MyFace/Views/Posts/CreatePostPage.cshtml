@@ -4,11 +4,14 @@
     Layout = "_Layout";
 }
 
-<form method = "post" action = "CreatePostRequest">
+<form method = "post" action = "/posts/create">
     <label for="message-input">Message</label>
     <input id="message-input" type = "text" name = "Message"/>
 
     <label for="image-url">ImageUrl</label>
-    <input id="message-input" type = "text" name = "ImageUrl"/>
+    <input id="ImageUrl" type = "url" name = "ImageUrl"/>
+
+     <label for="user-id">UserId</label>
+    <input id="UserId" type = "number" name = "UserId"/>
     <button type="submit">Submit!</button>
 </form>

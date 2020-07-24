@@ -1,0 +1,72 @@
+
+
+.welcome-text { 
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blue;
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+.subtitle-text {
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: cornflowerblue;
+    text-align: center;
+
+}
+
+.banner-image {
+    text-align: center;
+    width: 100vw;
+
+
+}
+
+.navbar-brand{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: cornflowerblue;
+
+}
+
+.navbar-link{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: cornflowerblue;
+
+}
+
+.privacy.container{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blue;
+    margin-top: 50px;
+    text-align: center;
+
+
+}
+
+.twitter-link{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red
+
+}
+
+.facebook-link{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: red
+    
+}
+
+.footer-class{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red
+
+}
+
+
+body {
+    margin: 0;
+}
+
