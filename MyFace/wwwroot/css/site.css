@@ -34,34 +34,32 @@
 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: cornflowerblue;
+    padding: 5px;
 
 }
 
-.privacy.container{
-
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: blue;
-    margin-top: 50px;
+.social-links{
     text-align: center;
-
 
 }
 
 .twitter-link{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: red
-
+    color: rgb(139, 25, 25);
+    
 }
 
 .facebook-link{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color: red
+        color: rgb(139, 29, 29);
+       
     
 }
 
 .footer-class{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: red
+    color: blue;
+    text-align: center;
 
 }
 
