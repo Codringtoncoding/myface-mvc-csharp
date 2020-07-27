@@ -5,32 +5,74 @@ body{
 
 .cover-image{
 
-    width: 100vw;
+    width: calc(100vw - 20px);
 }
 
 .profile-image{
-    display: flex;
-    justify-content: flex-end;
+    margin-top: 10px;
     width: 50px;
     border-radius: 50px;
     padding: 5px; 
     border: 1px black solid;
 }
 
-.post-image{
+.flex-box-hero-section{
+    margin: 10px;
     display: flex;
-    width: 100vw;
+    flex-direction: column;
+    
+}
+
+.flex-box-post-images{
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+
+}
+
+.footer-logos{
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-corndel-logo{
+    height: 50px;
+    padding: 10px;
+    width: 100px;
+
+}
+.footer-softwire-logo{
+    padding: 10px;
+    height: 50px;
+    width: 100px;
+
+
+
+}
+
+.post-image{
+
+    width: calc(100vw - 20px);
 }
 
 .image-container{
-    display: flex;
-    justify-content: center;
+
+
     padding: 0;
     list-style: none;
 }
 
-.p{
+p{
     margin: 0;
 
+
+}
+
+ol{
+    padding: 0;
+    list-style: none;
 }
 // .cover

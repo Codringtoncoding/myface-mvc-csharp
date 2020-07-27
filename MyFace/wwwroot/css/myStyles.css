@@ -4,41 +4,78 @@ body {
 }
 
 .cover-image {
-  width: 100vw;
+  width: calc(100vw - 20px);
 }
 
 .profile-image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  margin-top: 10px;
   width: 50px;
   border-radius: 50px;
   padding: 5px;
   border: 1px black solid;
 }
 
-.post-image {
+.flex-box-hero-section {
+  margin: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-box-post-images {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.footer-corndel-logo {
+  height: 50px;
+  padding: 10px;
+  width: 100px;
+}
+
+.footer-softwire-logo {
+  padding: 10px;
+  height: 50px;
+  width: 100px;
+}
+
+.post-image {
+  width: calc(100vw - 20px);
 }
 
 .image-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding: 0;
   list-style: none;
 }
 
-.p {
+p {
   margin: 0;
+}
+
+ol {
+  padding: 0;
+  list-style: none;
 }
 /*# sourceMappingURL=myStyles.css.map */

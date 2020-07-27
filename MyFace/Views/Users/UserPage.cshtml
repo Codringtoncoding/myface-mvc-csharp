@@ -5,7 +5,7 @@
     <a class="Create-Post-Link" asp-area="" asp-controller="Posts" asp-action="CreatePostPage">Create a Posts</a>
 }
 
-<section id="hero-section">
+<section class = "flex-box-hero-section" id="hero-section">
     <img class = "cover-image" src="@Model.CoverImageUrl" alt="Cover Image"/>
     <img class = "profile-image" src="@Model.ProfileImageUrl" alt="Profile Image"/>
     <h1>@Model.DisplayName</h1>
@@ -13,7 +13,7 @@
     <div>@Model.Email</div>
 </section>
 
-<section id="posts-section">
+<section class = "post-section" id="posts-section">
     <h2>@(Model.FirstName)'s Posts</h2>
     <partial name="_PostList" model="@Model.Posts"/>
     @if (Model.HasMorePosts)
