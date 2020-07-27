@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<MyFace.Models.View.PostViewModel>
 
-<ol>
+<ol class = "image-container">
     @foreach (var post in Model)
     {
         <li>
-            <img src="@post.ImageUrl"  alt="">
+            <img class = "post-image" src="@post.ImageUrl"  alt="">
             <a href="/users/@post.PostedBy.Id">@post.PostedBy.Username</a>
             <div>@post.FormattedTimeSincePost</div>
             <div>@post.Message</div>

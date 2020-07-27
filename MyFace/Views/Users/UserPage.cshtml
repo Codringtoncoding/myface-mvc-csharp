@@ -2,11 +2,12 @@
 
 @{
     Layout = "_Layout";
+    <a class="Create-Post-Link" asp-area="" asp-controller="Posts" asp-action="CreatePostPage">Create a Posts</a>
 }
 
 <section id="hero-section">
-    <img src="@Model.CoverImageUrl" alt="Cover Image"/>
-    <img src="@Model.ProfileImageUrl" alt="Profile Image"/>
+    <img class = "cover-image" src="@Model.CoverImageUrl" alt="Cover Image"/>
+    <img class = "profile-image" src="@Model.ProfileImageUrl" alt="Profile Image"/>
     <h1>@Model.DisplayName</h1>
     <div>@Model.Username</div>
     <div>@Model.Email</div>

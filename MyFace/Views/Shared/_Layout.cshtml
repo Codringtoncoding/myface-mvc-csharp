@@ -5,22 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - MyFace</title>
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/myStyles.css" />
+
 </head>
 <body>
     <header>
         <nav>
             <a asp-controller="Home" asp-action="Index">MyFace</a>
-            <ul>
-                <li>
-                    <a asp-controller="Posts" asp-action="PostsPage">Posts</a>
-                </li>
-                <li>
-                    <a asp-controller="Users" asp-action="UsersPage">Users</a>
-                </li>
-                <li>
-                    <a asp-controller="Home" asp-action="Privacy">Privacy</a>
-                </li>
-            </ul>
+            <a asp-controller="Posts" asp-action="PostsPage">Posts</a>
+            <a asp-controller="Users" asp-action="UsersPage">Users</a>
+            <a asp-controller="Home" asp-action="Privacy">Privacy</a>
+           
         </nav>
     </header>
     <div>

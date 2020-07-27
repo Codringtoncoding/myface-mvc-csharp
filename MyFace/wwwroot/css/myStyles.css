@@ -1,0 +1,44 @@
+body {
+  background: #d3d3db;
+  margin: 0;
+}
+
+.cover-image {
+  width: 100vw;
+}
+
+.profile-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 50px;
+  border-radius: 50px;
+  padding: 5px;
+  border: 1px black solid;
+}
+
+.post-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+}
+
+.image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+.p {
+  margin: 0;
+}
+/*# sourceMappingURL=myStyles.css.map */
