@@ -1,6 +1,17 @@
 body{
-    background: rgb(211, 211, 219);
+    background: rgb(252, 252, 252);
     margin: 0;
+}
+
+.profile-top-corner-of-cover{
+    display: flex;
+    width: 100%;
+}
+
+.profile-top-right{
+    display: flex;
+    flex-direction: inherit;
+
 }
 
 .cover-image{
@@ -32,8 +43,11 @@ body{
 
 }
 
-.footer-logos{
 
+
+.footer-logos{
+    background-color: cadetblue;
+    margin: auto;
     display: flex;
     justify-content: space-evenly;
 }

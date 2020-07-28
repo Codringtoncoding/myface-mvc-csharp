@@ -6,8 +6,13 @@
 }
 
 <section class = "flex-box-hero-section" id="hero-section">
-    <img class = "cover-image" src="@Model.CoverImageUrl" alt="Cover Image"/>
-    <img class = "profile-image" src="@Model.ProfileImageUrl" alt="Profile Image"/>
+    <div class = "profile-top-corner-of-cover">
+     <img class = "cover-image" src="@Model.CoverImageUrl" alt="Cover Image"/>
+    </div>
+    <div class = "profile-top-right">
+        <img class = "profile-image" src="@Model.ProfileImageUrl" alt="Profile Image"/>
+    </div>
+    
     <h1>@Model.DisplayName</h1>
     <div>@Model.Username</div>
     <div>@Model.Email</div>

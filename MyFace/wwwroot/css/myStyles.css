@@ -1,6 +1,23 @@
 body {
-  background: #d3d3db;
+  background: #fcfcfc;
   margin: 0;
+}
+
+.profile-top-corner-of-cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.profile-top-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: inherit;
+  -webkit-box-direction: inherit;
+      -ms-flex-direction: inherit;
+          flex-direction: inherit;
 }
 
 .cover-image {
@@ -41,6 +58,8 @@ body {
 }
 
 .footer-logos {
+  background-color: cadetblue;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
