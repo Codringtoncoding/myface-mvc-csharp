@@ -3,16 +3,20 @@ body{
     margin: 0;
 }
 
-.profile-top-corner-of-cover{
-    display: flex;
-    width: 100%;
-}
+// .cover-and-profile-images{
+  
 
-.profile-top-right{
-    display: flex;
-    flex-direction: inherit;
+// }
 
-}
+
+$background-color: #252A38;
+$darker-background: #151820;
+$default-foreground: #DCDCDC;
+$primary: #252A38;
+$transparenet-overlay:#252A38;
+$font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
 
 .cover-image{
 
@@ -20,6 +24,7 @@ body{
 }
 
 .profile-image{
+   
     margin-top: 10px;
     width: 50px;
     border-radius: 50px;
@@ -27,10 +32,14 @@ body{
     border: 1px black solid;
 }
 
-.flex-box-hero-section{
+.hero-section{
+    font-family: $font-family;
+
+    position: relative;
     margin: 10px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 80px;
     
 }
 
@@ -43,16 +52,31 @@ body{
 
 }
 
+.user-details{
+    font-family: $font-family;
+    background-color: $default-foreground;
 
+}
 
+.background-box{
+    background-color: $default-foreground;
+    width: 100%;
+    display: flex;
+    left: 20px;
+    bottom: -25px;
+    position: absolute;
+  
+}
 .footer-logos{
     background-color: cadetblue;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .footer-corndel-logo{
+
     height: 50px;
     padding: 10px;
     width: 100px;
@@ -67,6 +91,14 @@ body{
 
 }
 
+.post-section{
+    font-family: $font-family;
+
+}
+
+.likes-section{
+    font-family: $font-family;
+}
 .post-image{
 
     width: calc(100vw - 20px);
@@ -85,8 +117,21 @@ p{
 
 }
 
+h2{
+    margin: 10px;
+    font-family: $font-family;
+}
 ol{
     padding: 0;
     list-style: none;
+}
+
+nav{
+
+    background-color: $background-color;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: $font-family;
+
 }
 // .cover

@@ -3,23 +3,6 @@ body {
   margin: 0;
 }
 
-.profile-top-corner-of-cover {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-}
-
-.profile-top-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: inherit;
-  -webkit-box-direction: inherit;
-      -ms-flex-direction: inherit;
-          flex-direction: inherit;
-}
-
 .cover-image {
   width: calc(100vw - 20px);
 }
@@ -32,7 +15,9 @@ body {
   border: 1px black solid;
 }
 
-.flex-box-hero-section {
+.hero-section {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
   margin: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,6 +26,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 80px;
 }
 
 .flex-box-post-images {
@@ -57,6 +43,22 @@ body {
           flex-direction: column;
 }
 
+.user-details {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #DCDCDC;
+}
+
+.background-box {
+  background-color: #DCDCDC;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 20px;
+  bottom: -25px;
+  position: absolute;
+}
+
 .footer-logos {
   background-color: cadetblue;
   margin: auto;
@@ -66,6 +68,9 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer-corndel-logo {
@@ -78,6 +83,14 @@ body {
   padding: 10px;
   height: 50px;
   width: 100px;
+}
+
+.post-section {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.likes-section {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .post-image {
@@ -93,8 +106,24 @@ p {
   margin: 0;
 }
 
+h2 {
+  margin: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 ol {
   padding: 0;
   list-style: none;
+}
+
+nav {
+  background-color: #252A38;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 /*# sourceMappingURL=myStyles.css.map */

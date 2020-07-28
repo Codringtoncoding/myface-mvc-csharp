@@ -2,20 +2,21 @@
 
 @{
     Layout = "_Layout";
-    <a class="Create-Post-Link" asp-area="" asp-controller="Posts" asp-action="CreatePostPage">Create a Posts</a>
 }
-
-<section class = "flex-box-hero-section" id="hero-section">
-    <div class = "profile-top-corner-of-cover">
-     <img class = "cover-image" src="@Model.CoverImageUrl" alt="Cover Image"/>
-    </div>
-    <div class = "profile-top-right">
-        <img class = "profile-image" src="@Model.ProfileImageUrl" alt="Profile Image"/>
-    </div>
     
-    <h1>@Model.DisplayName</h1>
-    <div>@Model.Username</div>
-    <div>@Model.Email</div>
+
+<section class = "hero-section" id="hero-section">
+    <div class = "cover-and-profile-images">
+        <img class = "cover-image" src="@Model.CoverImageUrl" alt="Cover Image"/>
+            <div class = "background-box">
+                <img class = "profile-image" src="@Model.ProfileImageUrl" alt="Profile Image"/>
+                <div class ="user-details">
+                    <h1>@Model.DisplayName</h1>
+                    <div>@Model.Username</div>
+                    <div>@Model.Email</div>
+                </div>
+            </div>
+        </div>
 </section>
 
 <section class = "post-section" id="posts-section">
@@ -27,7 +28,7 @@
     }
 </section>
 
-<section id="likes-section">
+<section class = "like-section" id="likes-section">
     <h2>Posts @Model.FirstName Liked</h2>
     <partial name="_PostList" model="@Model.Likes"/>
     @if (Model.HasMoreLikes)
@@ -36,11 +37,11 @@
     }
 </section>
 
-<section id="dislikes-section">
+<section class = "dislike-section" id="dislikes-section">
     <h2>Posts @Model.FirstName Disliked</h2>
     <partial name="_PostList" model="@Model.Dislikes"/>
     @if (Model.HasMoreDislikes)
     {
-        <a href="@Model.ShowMoreDislikesUrl">Show More</a>
+        <a href ="@Model.ShowMoreDislikesUrl">Show More</a>
     }
 </section>
