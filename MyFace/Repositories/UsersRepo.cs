@@ -36,6 +36,9 @@ namespace MyFace.Repositories
         {
             return _context.Users
                 .Include(u => u.Posts)
+                .Include(u => u.Interactions)
+                .ThenInclude(i => i.Post)
+                .ThenInclude(p => p.User)
                 .Single(user => user.Id == id);
         }
 
