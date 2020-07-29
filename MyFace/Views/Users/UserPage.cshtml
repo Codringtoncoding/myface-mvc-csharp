@@ -21,11 +21,13 @@
 
 <section class = "post-section" id="posts-section">
     <h2>@(Model.FirstName)'s Posts</h2>
-    <partial name="_PostList" model="@Model.Posts"/>
-    @if (Model.HasMorePosts)
-    {
-        <a href="@Model.ShowMorePostsUrl">Show More</a>
-    }
+    <div class = "posts-box">
+        <partial name="_PostList" model="@Model.Posts"/>
+        @if (Model.HasMorePosts)
+        {
+            <a href="@Model.ShowMorePostsUrl">Show More</a>
+        }
+    </div>
 </section>
 
 <section class = "like-section" id="likes-section">

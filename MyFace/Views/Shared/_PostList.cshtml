@@ -6,8 +6,8 @@
         <li class = "flex-box-post-images">
             <img class = "post-image" src="@post.ImageUrl"  alt="">
             <a href="/users/@post.PostedBy.Id">@post.PostedBy.Username</a>
-            <div>@post.FormattedTimeSincePost</div>
-            <div>@post.Message</div>
+            <div class = "post-details-formatted" >@post.FormattedTimeSincePost</div>
+            <div class = "post-details-formatted" >@post.Message</div>
         </li>
     }
 </ol>

@@ -1,6 +1,6 @@
+@charset "UTF-8";
 body {
-  background: #fcfcfc;
-  margin: 0;
+  background-color: #252A38;
 }
 
 .cover-image {
@@ -16,7 +16,9 @@ body {
 }
 
 .hero-section {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
   position: relative;
   margin: 10px;
   display: -webkit-box;
@@ -44,23 +46,25 @@ body {
 }
 
 .user-details {
+  margin: 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #DCDCDC;
 }
 
 .background-box {
-  background-color: #DCDCDC;
+  background-color: rgba(37, 42, 56, 0.56);
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  left: 20px;
   bottom: -25px;
   position: absolute;
 }
 
 .footer-logos {
-  background-color: cadetblue;
+  background-color: #151820;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,20 +90,60 @@ body {
 }
 
 .post-section {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  background-color: #151820;
 }
 
 .likes-section {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  background-color: #151820;
 }
 
 .post-image {
   width: calc(100vw - 20px);
 }
 
+.flex-box-post-images {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.post-details-formatted {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+
 .image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow-y: scroll;
+  background-color: #151820;
   padding: 0;
   list-style: none;
+}
+
+h1 {
+  margin: 0px;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+li {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
 }
 
 p {
@@ -108,22 +152,33 @@ p {
 
 h2 {
   margin: 10px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
 }
 
+ç
 ol {
   padding: 0;
   list-style: none;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+
 nav {
-  background-color: #252A38;
+  background-color: #151820;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
 }
 /*# sourceMappingURL=myStyles.css.map */

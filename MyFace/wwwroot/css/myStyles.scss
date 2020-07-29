@@ -1,7 +1,4 @@
-body{
-    background: rgb(252, 252, 252);
-    margin: 0;
-}
+
 
 // .cover-and-profile-images{
   
@@ -12,11 +9,21 @@ body{
 $background-color: #252A38;
 $darker-background: #151820;
 $default-foreground: #DCDCDC;
-$primary: #252A38;
-$transparenet-overlay:#252A38;
-$font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
+$primary: #2985FF;
+$overlayColor: transparentize($background-color, 0.44);
+$font-family: ('Segoe UI', Tahoma, Geneva, Verdana, sans-serif);
 
+@mixin font($font-family: ('Segoe UI', Tahoma, Geneva, Verdana, sans-serif)) {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+body{
+    background-color: $background-color;
+
+}
 
 .cover-image{
 
@@ -25,7 +32,7 @@ $font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 .profile-image{
    
-    margin-top: 10px;
+    margin-top: $margin;
     width: 50px;
     border-radius: 50px;
     padding: 5px; 
@@ -33,8 +40,9 @@ $font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .hero-section{
-    font-family: $font-family;
+    @include font;
 
+    
     position: relative;
     margin: 10px;
     display: flex;
@@ -53,22 +61,26 @@ $font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .user-details{
+    $margin: 15px;
+    @include font;
     font-family: $font-family;
-    background-color: $default-foreground;
 
 }
 
 .background-box{
-    background-color: $default-foreground;
+
+    background-color: $overlayColor;
     width: 100%;
     display: flex;
-    left: 20px;
     bottom: -25px;
     position: absolute;
   
 }
+
+
+
 .footer-logos{
-    background-color: cadetblue;
+    background-color: $darker-background;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
@@ -92,25 +104,51 @@ $font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .post-section{
-    font-family: $font-family;
+    @include font;
+    background-color: $darker-background;
 
 }
 
 .likes-section{
-    font-family: $font-family;
+    @include font;
+    background-color: $darker-background;
+
+
 }
 .post-image{
 
     width: calc(100vw - 20px);
 }
 
+.flex-box-post-images{
+
+    @include font;
+}
+
+.post-details-formatted{
+
+    @include font;
+
+}
 .image-container{
 
-
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+    background-color: $darker-background;
     padding: 0;
     list-style: none;
 }
 
+h1{
+    margin: 0px;
+    @include font;
+}
+
+li{
+    @include font;
+
+}
 p{
     margin: 0;
 
@@ -119,19 +157,28 @@ p{
 
 h2{
     margin: 10px;
-    font-family: $font-family;
-}
+    @include font;
+
+
+}ç
+
 ol{
     padding: 0;
     list-style: none;
 }
 
+a{
+    @include font;
+}
 nav{
 
-    background-color: $background-color;
+    background-color: $darker-background;
     display: flex;
     justify-content: space-evenly;
-    font-family: $font-family;
+    @include font;
+
+    
 
 }
+
 // .cover
